@@ -1,0 +1,25 @@
+### GET ALL TASK
+GET http://localhost:5000/api/v1/tasks
+
+### CREATE A TASK
+POST http://localhost:5000/api/v1/tasks
+content-type: application/json
+
+{
+    "name": "walking",
+    "completed": true
+}
+
+### GET A TASK
+GET http://localhost:5000/api/v1/tasks/62f375f873d93108c05ce57d
+
+### DELETE A TASK
+DELETE http://localhost:5000/api/v1/tasks/62f375f873d93108c05ce57c
+
+### UPDATE A TASK
+PATCH http://localhost:5000/api/v1/tasks/62f376c111b38535c08315b9
+content-type: application/json
+
+{
+    "name": "walking a dog"
+}
